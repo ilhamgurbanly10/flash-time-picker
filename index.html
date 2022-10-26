@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Time Picker</title>
+
+    <link rel="stylesheet" href="css/flash-time-picker.css">
+    <link rel="stylesheet" type="text/css" href="font_awesome/css/font-awesome.min.css">
+
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fl-time-picker {
+            margin-top: 2rem;
+        }
+
+        h1 {
+            margin-top: 3rem;
+            color: #496fec;
+            font-family: sans-serif;
+        }
+
+        h3 {
+            font-family: sans-serif;
+            margin-top: 1rem;
+            color: #6282e8;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Flash Time Picker</h1>
+    <h3>By Ilham Gurbanly</h3>
+
+
+    <div class="fl-time-picker">
+
+        <input type="time" class="fl-time-picker-input" name="time">
+
+        <button type="button" class="fl-time-picker-toggler">
+            <i class="fl-time-picker-toggler-icon fa fa-clock-o"></i>
+            <span class="fl-time-picker-toggler-val">13:20</span>
+            <i class="fl-time-picker-toggler-arrow fa fa-chevron-down"></i>
+        </button>
+
+        <div class="fl-time-picker-dropdown dropdown">
+
+            <button type="button" class="fl-time-picker-corner-close fl-time-picker-iconic-btn fl-time-picker-rotate fl-time-picker-opacity">
+                <i class="fl-time-picker-corner-close-arrow fa fa-times"></i>
+            </button>
+
+            <div class="fl-time-picker-container">
+
+                <div class="fl-time-picker-header">
+                    
+                    <p class="fl-time-picker-time"></p>
+
+                </div>
+
+                <div class="fl-time-picker-body">
+                    
+                    <div class="fl-time-picker-clock">
+                        
+                        <div class="fl-time-picker-hours fl-time-picker-scrollbar"></div>
+
+                        <div class="fl-time-picker-minutes fl-time-picker-scrollbar"> </div>
+
+                        <div class="fl-time-picker-seconds fl-time-picker-scrollbar"></div>
+
+                    </div>
+                    
+
+                </div>
+
+                <div class="fl-time-picker-footer">
+                    <button type="button" class="fl-time-picker-reset fl-time-picker-btn fl-time-picker-warning fl-time-picker-grow">Reset</button>
+                    <button type="button" class="fl-time-picker-close fl-time-picker-btn fl-time-picker-warning fl-time-picker-grow">Close</button>
+                </div>
+            
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="js/flash-time-picker.js"></script>
+
+</body>
+</html>
